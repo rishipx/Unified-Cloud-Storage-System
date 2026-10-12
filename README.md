@@ -397,28 +397,40 @@ We will use a Windows background script to mount the cloud drives automatically 
 
 To access this exact same setup on your phone natively without syncing locally:
 
-- **Step 1: Export your Windows Rclone config**
-  - Open a terminal and type `rclone config file`.
-  - Open the path provided (usually `C:\Users\YourName\AppData\Roaming\rclone\rclone.conf`).
-  - Copy & export this `rclone.conf` file to your Android phone's local storage.
+<details>
+<summary><b>Step 1:</b> Export your Windows Rclone config</summary>
 
-  > [!WARNING]
-  > `rclone.conf` holds your OAuth tokens and obscured (not encrypted) crypt passwords. Transfer it over a trusted channel and delete the copy from the phone's storage after importing.
+&nbsp;
 
-- **Step 2: Configure RSAF**
-  - Install **RSAF** (available via [GitHub](https://github.com/chenxiaolong/RSAF) or [F-Droid](https://f-droid.org/packages/com.chiller3.rsaf/)).
-  - Open RSAF, tap **Import configuration** and select the `rclone.conf` file you copied from your PC.
+- Open a terminal and type `rclone config file`.
+- Open the path provided (usually `C:\Users\YourName\AppData\Roaming\rclone\rclone.conf`).
+- Copy & export this `rclone.conf` file to your Android phone's local storage.
 
-    <img src="images/rsaf-import.png" alt="RSAF import configuration" width="300">
+> [!WARNING]
+> `rclone.conf` holds your OAuth tokens and obscured (not encrypted) crypt passwords. Transfer it over a trusted channel and delete the copy from the phone's storage after importing.
 
-  - The app will instantly recognize your `GooglePool` and `SecureDrive` setups, including your encryption keys.
+</details>
+
+<details>
+<summary><b>Step 2:</b> Configure RSAF</summary>
+
+&nbsp;
+
+- Install **RSAF** (available via [GitHub](https://github.com/chenxiaolong/RSAF) or [F-Droid](https://f-droid.org/packages/com.chiller3.rsaf/)).
+- Open RSAF, tap **Import configuration** and select the `rclone.conf` file you copied from your PC.
+
+  <img src="images/rsaf-import.png" alt="RSAF import configuration" width="300">
+
+- The app will instantly recognize your `GooglePool` and `SecureDrive` setups, including your encryption keys.
+
+</details>
 
 <details>
 <summary><b>Step 3:</b> Access via File Manager</summary>
 
 &nbsp;
 
-- Open a SAF-compliant app like **Material Files**.
+- Open a SAF-compliant app like **[Material Files](https://github.com/zhanghai/MaterialFiles)**.
 - Click the hamburger icon and tap **Add storage**.
 
   <img src="images/material-add-storage.jpg" alt="Material Files: Add storage" width="300">
