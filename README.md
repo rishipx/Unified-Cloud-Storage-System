@@ -127,7 +127,7 @@ This is a "set-it-and-forget-it" configuration. Using a custom Windows script, d
 1. Log in to the [Google Cloud Console](https://console.cloud.google.com) with any of your Google accounts.
 2. Click **Select a project** at the top left & click the **NEW PROJECT** button in the popup.
 
-   <img src="images/select-project.png" alt="Select a project button" width="49%"> <img src="images/new-project.png" alt="New project button" width="49%">
+   <img src="images/select-project.png" alt="Select a project button" width="49%"> <img src="images/project-popup-empty.png" alt="New project button" width="49%">
 
 3. Name the project whatever you want (e.g., `rclone`) and leave the **Organization** setting as `No organization`.
 
@@ -160,8 +160,6 @@ This is a "set-it-and-forget-it" configuration. Using a custom Windows script, d
    5. Click **Create**.
 
 9. Under the **Branding** tab just fill in `https://rclone.org` in the respective fields & `rclone.org` under **Authorised domains**, then click **Save**.
-
-   ![Branding tab](images/branding.png)
 
    ![Authorised domains](images/branding-cropped.png)
 
