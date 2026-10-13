@@ -184,7 +184,6 @@ This is a "set-it-and-forget-it" configuration. Using a custom Windows script, d
 
 - Open Command Prompt or PowerShell in Windows.
 - Type `rclone config` and press Enter.
-- Type `n` to create a new remote and name it, e.g. `drive1`.
 
   ```text
   PS C:\WINDOWS\system32> rclone config
@@ -199,6 +198,7 @@ This is a "set-it-and-forget-it" configuration. Using a custom Windows script, d
   q) Quit config
   e/n/d/r/c/s/q> n
   ```
+- Type `n` to create a new remote and name it, e.g. `drive1`.
 
 - Now type `drive` or `24` to select **Google Drive** from the list of storage options.
 - Paste the **Client ID** and **Client Secret** you generated in Step 2.
@@ -268,7 +268,7 @@ This is a "set-it-and-forget-it" configuration. Using a custom Windows script, d
 - Type `rclone config` in your terminal.
 - Type `n` for a new remote and name it, e.g. `GooglePool`.
 - Now type **`union`** or **`62`** to select union from the list of storage types.
-- When asked for upstreams, enter the names of the accounts you just created, separated by spaces: `drive1: drive2: drive3: drive4:`
+- When asked for upstreams, enter the exact names of the remotes you just created, separated by spaces: `drive1: drive2: drive3: drive4:`
 
   ![Union upstreams](images/union-upstreams.png)
 
